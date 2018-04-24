@@ -22,7 +22,7 @@ public class LevelOrderTraversal {
 
             while (!queue.isEmpty()) {
                 Node cur = queue.remove();
-                System.out.println(cur.data + " ");
+                System.out.print(cur.data + " ");
                 if (cur.left != null) {
                     queue.add(cur.left);
                 }
@@ -30,7 +30,6 @@ public class LevelOrderTraversal {
                     queue.add(cur.right);
                 }
             }
-
         }
     }
 
