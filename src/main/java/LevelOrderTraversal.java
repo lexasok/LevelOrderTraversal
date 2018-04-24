@@ -1,8 +1,19 @@
+import java.util.Scanner;
+
 public class LevelOrderTraversal {
+
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        Node root = null;
+        while (t-- > 0) {
+            int data = sc.nextInt();
+            root = insert(root, data);
+        }
+        levelOrder(root);
     }
 
-    public static void levelOrder() {
+    public static void levelOrder(Node root) {
 
     }
 
@@ -21,6 +32,8 @@ public class LevelOrderTraversal {
             return root;
         }
     }
+
+
 }
 
 class Node {
